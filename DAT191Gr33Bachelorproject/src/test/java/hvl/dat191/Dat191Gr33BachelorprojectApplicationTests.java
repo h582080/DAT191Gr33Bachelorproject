@@ -1,4 +1,4 @@
-package hvl.dat1;
+package hvl.dat191;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
