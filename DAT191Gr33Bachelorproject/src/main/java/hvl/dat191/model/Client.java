@@ -1,13 +1,16 @@
 package hvl.dat191.model;
 
-import org.hibernate.annotations.Table;
-
+import jakarta.persistence.Table;
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
 
 @Entity
-@Table(appliesTo = "client") 
+@Table (name ="client")
 public class Client {
 	
+	@Id
+	private int clientId;
 	private int maxNumberOfProjectsSemester;
 	private String clientType;
 	

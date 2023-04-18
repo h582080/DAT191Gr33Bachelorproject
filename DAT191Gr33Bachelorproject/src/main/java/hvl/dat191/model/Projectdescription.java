@@ -2,13 +2,13 @@ package hvl.dat191.model;
 
 import java.sql.Date;
 
-import org.hibernate.annotations.Table;
-import org.springframework.data.annotation.Id;
 
+import jakarta.persistence.Table;
+import jakarta.persistence.Id;
 import jakarta.persistence.Entity;
 
 @Entity
-@Table(appliesTo = "projectdescription")
+@Table(name = "projectdescription")
 public class Projectdescription {
 	
 	@Id

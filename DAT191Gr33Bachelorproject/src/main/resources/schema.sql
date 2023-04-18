@@ -30,8 +30,10 @@ CREATE TABLE student
 
 CREATE TABLE client
 (
+   clientId int (20) NOT NULL,
    maxNumberOfProjectsSemester int (1) NOT NULL,
    clientType varchar (10) NOT NULL
+   PRIMARY KEY (clientId)
  
 );
 

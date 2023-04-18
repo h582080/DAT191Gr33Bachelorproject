@@ -1,13 +1,14 @@
 package hvl.dat191.model;
 
-import org.hibernate.annotations.Table;
-import org.springframework.data.annotation.Id;
+
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 
 @Entity
-@Table(appliesTo = "user")
+@Table(name = "user")
 public class User {
 	
 	@Id

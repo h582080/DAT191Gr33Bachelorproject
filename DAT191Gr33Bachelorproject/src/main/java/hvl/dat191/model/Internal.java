@@ -1,12 +1,12 @@
 package hvl.dat191.model;
 
-import org.hibernate.annotations.Table;
-import org.springframework.data.annotation.Id;
 
+import jakarta.persistence.Table;
+import jakarta.persistence.Id;
 import jakarta.persistence.Entity;
 
 @Entity
-@Table (appliesTo = "internal")
+@Table (name = "internal")
 public class Internal {
 	
 	@Id

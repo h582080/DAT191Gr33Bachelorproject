@@ -1,17 +1,18 @@
 package hvl.dat191.model;
 
-import org.hibernate.annotations.Table;
-import org.springframework.data.annotation.Id;
 
+import jakarta.persistence.Table;
+import jakarta.persistence.Id;
 import jakarta.persistence.Entity;
 
 
 @Entity
-@Table(appliesTo = "external")
+@Table(name = "external")
 public class External {
 	
 	@Id
 	private int externalId;
+	
 	private String name;
 	private String companyName;
 	private int phoneNr;
