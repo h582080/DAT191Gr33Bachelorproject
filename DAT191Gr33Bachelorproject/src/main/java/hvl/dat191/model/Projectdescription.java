@@ -25,11 +25,11 @@ public class Projectdescription {
 	private String contactPerson;
 	private String status;
 	private String semester;
-	private Date dateOfApproval;
+	private String dateOfApproval;
 	
 	public Projectdescription(int projectId, String projectTitel, String companyInfo, String projectDescription,
 			String tools, String language, String programmingLanguage, String projectType, String webAddress,
-			String contactPerson, String status, String semester, Date dateOfApproval) {
+			String contactPerson, String status, String semester, String dateOfApproval) {
 		this.projectId = projectId;
 		this.projectTitel = projectTitel;
 		this.companyInfo = companyInfo;
@@ -116,10 +116,10 @@ public class Projectdescription {
 	public void setSemester(String semester) {
 		this.semester = semester;
 	}
-	public Date getDateOfApproval() {
+	public String getDateOfApproval() {
 		return dateOfApproval;
 	}
-	public void setDateOfApproval(Date dateOfApproval) {
+	public void setDateOfApproval(String dateOfApproval) {
 		this.dateOfApproval = dateOfApproval;
 	}
 	

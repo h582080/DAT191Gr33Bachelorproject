@@ -6,14 +6,14 @@ import hvl.dat191.model.Projectdescription;
 
 public interface ProjectdescriptionDAOInterface {
 	
-List<Projectdescription> findAll();
+List<Projectdescription> findAllProjectdescription();
 	
 	void insertProjectdescription(Projectdescription projectDsc);
 	
 	void updateProjectdescription(Projectdescription projectDsc);
 	
-	void executeUpdateProejctdescription(Projectdescription projectDsc);
+	void executeUpdateProjectdescription(Projectdescription projectDsc);
 	
-	public void deleteProejectdescription(Projectdescription projectDsc);
+	public void deleteProjectdescription(Projectdescription projectDsc);
 
 }

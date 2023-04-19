@@ -6,7 +6,7 @@ import hvl.dat191.model.Student;
 
 public interface StudentDAOInterface {
 	
-List<Student> findAll();
+List<Student> findAllStudent();
 	
 	void insertStudent(Student student);
 	

@@ -6,7 +6,7 @@ import hvl.dat191.model.User;
 
 public interface UserDAOInterface {
 	
-List<User> findAll();
+List<User> findAllUser();
 	
 	void insertUser(User user);
 	
