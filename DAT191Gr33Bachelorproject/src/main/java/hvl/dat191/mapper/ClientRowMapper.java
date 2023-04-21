@@ -11,8 +11,12 @@ public class ClientRowMapper implements RowMapper<Client> {
 
 	@Override
 	public Client mapRow(ResultSet rs, int rowNum) throws SQLException {
-		// TODO Auto-generated method stub
-		return null;
+		Client cl = new Client(
+				rs.getInt("clientId"),
+				rs.getInt("maxNumberOfProjectsSemester"),
+				rs.getString("clientType")
+				);
+		return cl;
 	}
 
 }

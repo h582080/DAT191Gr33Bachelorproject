@@ -14,11 +14,20 @@ public class Client {
 	private int maxNumberOfProjectsSemester;
 	private String clientType;
 	
-	public Client(int maxNumberOfProjectsSemester, String clientType) {
+	public Client(int clientId, int maxNumberOfProjectsSemester, String clientType) {
+		this.clientId = clientId;
 		this.maxNumberOfProjectsSemester = maxNumberOfProjectsSemester;
 		this.clientType = clientType;
 	}
 
+	public int getClientId() {
+		return clientId;
+	}
+	
+	public void setClientId(int clientId) {
+		this.clientId = clientId;
+	}
+	
 	public int getMaxNumberOfProjectsSemester() {
 		return maxNumberOfProjectsSemester;
 	}
