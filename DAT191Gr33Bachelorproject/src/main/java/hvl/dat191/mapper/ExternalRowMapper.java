@@ -14,7 +14,7 @@ public class ExternalRowMapper implements RowMapper<External> {
 		External ext = new External(
 				rs.getInt("externalId"),
 				rs.getString("name"),
-				rs.getString("companyNavn"),
+				rs.getString("companyname"),
 				rs.getInt("phoneNr"),
 				rs.getString("email")
 				);
