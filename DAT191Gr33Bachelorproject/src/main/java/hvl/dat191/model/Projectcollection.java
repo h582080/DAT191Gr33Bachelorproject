@@ -10,24 +10,24 @@ import jakarta.persistence.Entity;
 public class Projectcollection {
 	
 	@Id
-	private String collectionId;
+	private int collectionId;
 	
 	private int template;
-	private String collectionTitel;
+	private String collectionTitle;
 	private String semester;
 	
-	public Projectcollection(String collectionId, int template, String collectionTitel, String semester) {
-		this.collectionId = collectionId;
+	public Projectcollection(int id, int template, String collectionTitle, String semester) {
+		this.collectionId = id;
 		this.template = template;
-		this.collectionTitel = collectionTitel;
+		this.collectionTitle = collectionTitle;
 		this.semester = semester;
 	}
 
-	public String getCollectionId() {
+	public int getCollectionId() {
 		return collectionId;
 	}
 
-	public void setCollectionId(String collectionId) {
+	public void setCollectionId(int collectionId) {
 		this.collectionId = collectionId;
 	}
 
@@ -39,12 +39,12 @@ public class Projectcollection {
 		this.template = template;
 	}
 
-	public String getCollectionTitel() {
-		return collectionTitel;
+	public String getCollectionTitle() {
+		return collectionTitle;
 	}
 
-	public void setCollectionTitel(String collectionTitel) {
-		this.collectionTitel = collectionTitel;
+	public void setCollectionTitle(String collectionTitle) {
+		this.collectionTitle = collectionTitle;
 	}
 
 	public String getSemester() {

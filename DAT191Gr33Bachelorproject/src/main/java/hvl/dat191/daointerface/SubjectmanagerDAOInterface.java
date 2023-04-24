@@ -6,7 +6,7 @@ import hvl.dat191.model.Subjectmanager;
 
 public interface SubjectmanagerDAOInterface {
 	
-List<Subjectmanager> findAllSubjectmanager();
+	List<Subjectmanager> findAllSubjectmanager();
 	
 	void insertSubjectmanager(Subjectmanager subjectmanager);
 	

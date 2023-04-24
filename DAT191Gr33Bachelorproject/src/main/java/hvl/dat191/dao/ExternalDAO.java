@@ -36,13 +36,13 @@ public class ExternalDAO implements ExternalDAOInterface {
 	@Override
 	public void insertExternal(External ext) {
 		
-		final String sql = "insert into external(externalId, name, companyname, phoneNr, email) values(:externalId,:name,:companyname,:phoneNr,:email)";
+		final String sql = "insert into external(externalId, name, companyName, phoneNr, email) values(:externalId,:name,:companyName,:phoneNr,:email)";
 	
 		KeyHolder holder = new GeneratedKeyHolder();
 		SqlParameterSource param = new MapSqlParameterSource()
 				.addValue("externalId", ext.getExternalId())
 				.addValue("name", ext.getName())
-				.addValue("companyname", ext.getCompanyName())
+				.addValue("companyName", ext.getCompanyName())
 				.addValue("phoneNr", ext.getPhoneNr())
 				.addValue("email", ext.getEmail());
 		template.update(sql, param, holder);
@@ -51,13 +51,13 @@ public class ExternalDAO implements ExternalDAOInterface {
 	@Override
 	public void updateExternal(External ext) {
 		
-		final String sql = "update external set name=:name, companyname=:companyname, phoneNr=:phoneNr, email=:email where externalId=:externalId";
+		final String sql = "update external set name=:name, companyName=:companyName, phoneNr=:phoneNr, email=:email where externalId=:externalId";
 	
 		KeyHolder holder = new GeneratedKeyHolder();
 		SqlParameterSource param = new MapSqlParameterSource()
 				.addValue("externalId", ext.getExternalId())
 				.addValue("name", ext.getName())
-				.addValue("companyname", ext.getCompanyName())
+				.addValue("companyName", ext.getCompanyName())
 				.addValue("phoneNr", ext.getPhoneNr())
 				.addValue("email", ext.getEmail());
 		template.update(sql, param, holder);
@@ -67,12 +67,12 @@ public class ExternalDAO implements ExternalDAOInterface {
 
 	@Override
 	public void executeUpdateExternal(External ext) {
-		final String sql = "update external set name=:name, companyname=:companyname, phoneNr=:phoneNr, email=:email where externalId=:externalId";
+		final String sql = "update external set name=:name, companyName=:companyName, phoneNr=:phoneNr, email=:email where externalId=:externalId";
 		
 		Map<String, Object> map = new HashMap<String, Object>();
 		map.put("externalId", ext.getExternalId());
 		map.put("name", ext.getName());
-		map.put("companyname", ext.getCompanyName());
+		map.put("companyName", ext.getCompanyName());
 		map.put("phoneNr", ext.getPhoneNr());
 		map.put("email", ext.getEmail());
 		

@@ -20,6 +20,7 @@ import hvl.dat191.daointerface.ProjectcollectionDAOInterface;
 import hvl.dat191.model.Projectcollection;
 import hvl.dat191.mapper.ProjCollRowMapper;
 
+@Repository
 public class ProjectcollectionDAO implements ProjectcollectionDAOInterface {
 
 	NamedParameterJdbcTemplate template;
@@ -35,38 +36,38 @@ public class ProjectcollectionDAO implements ProjectcollectionDAOInterface {
 
 	@Override
 	public void insertProjectcollection(Projectcollection projectCl) {
-		final String sql = "insert into projectcollection(collectionId, template, collectionTitel, semester) values(:collectionId,:template,:collectionTitel,:semester)";
+		final String sql = "insert into projectcollection(collectionId, template, collectionTitle, semester) values(:collectionId,:template,:collectionTitle,:semester)";
 		
 		KeyHolder holder = new GeneratedKeyHolder();
 		SqlParameterSource param = new MapSqlParameterSource()
 				.addValue("collectionId", projectCl.getCollectionId())
 				.addValue("template", projectCl.getTemplate())
-				.addValue("collectionTitel", projectCl.getCollectionTitel())
+				.addValue("collectionTitle", projectCl.getCollectionTitle())
 				.addValue("semester", projectCl.getSemester());
 		template.update(sql, param, holder);
 	}
 
 	@Override
 	public void updateProjectcollection(Projectcollection projectCl) {
-		final String sql = "update projectcollection set template=:template, collectionTitel=:collectionTitel, semester=:semester where collectionId=:collectionId";
+		final String sql = "update projectcollection set template=:template, collectionTitle=:collectionTitle, semester=:semester where collectionId=:collectionId";
 		
 		KeyHolder holder = new GeneratedKeyHolder();
 		SqlParameterSource param = new MapSqlParameterSource()
 				.addValue("collectionId", projectCl.getCollectionId())
 				.addValue("template", projectCl.getTemplate())
-				.addValue("collectionTitel", projectCl.getCollectionTitel())
+				.addValue("collectionTitle", projectCl.getCollectionTitle())
 				.addValue("semester", projectCl.getSemester());
 		template.update(sql, param, holder);	
 	}
 
 	@Override
 	public void executeUpdateProjectcollection(Projectcollection projectCl) {
-		final String sql = "update projectcollection set template=:template, collectionTitel=:collectionTitel, semester=:semester where collectionId=:collectionId";
+		final String sql = "update projectcollection set template=:template, collectionTitle=:collectionTitle, semester=:semester where collectionId=:collectionId";
 		
 		Map<String, Object> map = new HashMap<String, Object>();
 		map.put("collectionId", projectCl.getCollectionId());
 		map.put("template", projectCl.getTemplate());
-		map.put("collectionTitel", projectCl.getCollectionTitel());
+		map.put("collectionTitle", projectCl.getCollectionTitle());
 		map.put("semester", projectCl.getSemester());
 		
 		template.execute(sql, map, new PreparedStatementCallback<Object>() {

@@ -77,8 +77,18 @@ public class ClientDAO implements ClientDAOInterface{
 
 	@Override
 	public void deleteClient(Client client) {
-		// TODO Auto-generated method stub
+		final String sql = "delete from client where clientId=:clientId";
 		
+		Map<String, Object> map = new HashMap<String, Object>();
+		map.put("clientId", client.getClientId());
+		
+		template.execute(sql, map, new PreparedStatementCallback<Object>() {
+			@Override
+			public Object doInPreparedStatement(PreparedStatement ps)
+					throws SQLException, DataAccessException{
+				return ps.executeUpdate();
+			}
+		});		
 	}
 
 }

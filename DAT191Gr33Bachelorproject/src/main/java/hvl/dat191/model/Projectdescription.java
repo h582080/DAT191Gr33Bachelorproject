@@ -19,7 +19,7 @@ public class Projectdescription {
 	private String projectDescription;
 	private String tools;
 	private String language;
-	private String programmingLanguage;
+	private String programminglanguage;
 	private String projectType;
 	private String webAddress;
 	private String contactPerson;
@@ -28,7 +28,7 @@ public class Projectdescription {
 	private String dateOfApproval;
 	
 	public Projectdescription(int projectId, String projectTitel, String companyInfo, String projectDescription,
-			String tools, String language, String programmingLanguage, String projectType, String webAddress,
+			String tools, String language, String programminglanguage, String projectType, String webAddress,
 			String contactPerson, String status, String semester, String dateOfApproval) {
 		this.projectId = projectId;
 		this.projectTitel = projectTitel;
@@ -36,7 +36,7 @@ public class Projectdescription {
 		this.projectDescription = projectDescription;
 		this.tools = tools;
 		this.language = language;
-		this.programmingLanguage = programmingLanguage;
+		this.programminglanguage = programminglanguage;
 		this.projectType = projectType;
 		this.webAddress = webAddress;
 		this.contactPerson = contactPerson;
@@ -81,10 +81,10 @@ public class Projectdescription {
 		this.language = language;
 	}
 	public String getProgrammingLanguage() {
-		return programmingLanguage;
+		return programminglanguage;
 	}
-	public void setProgrammingLanguage(String programmingLanguage) {
-		this.programmingLanguage = programmingLanguage;
+	public void setProgrammingLanguage(String programminglanguage) {
+		this.programminglanguage = programminglanguage;
 	}
 	public String getProjectType() {
 		return projectType;

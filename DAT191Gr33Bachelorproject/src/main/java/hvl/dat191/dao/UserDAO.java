@@ -30,12 +30,12 @@ public class UserDAO implements UserDAOInterface{
 
 	@Override
 	public List<User> findAllUser() {
-		return template.query ("select * from user", new UserRowMapper());
+		return template.query ("select * from users", new UserRowMapper());
 	}
 
 	@Override
 	public void insertUser(User user) {
-		final String sql = "insert into user(userId, username, role, name, phoneNr, email) values(:userId,:username,:role,:name,:email)";
+		final String sql = "insert into users(userId, username, role, name, phoneNr, email) values(:userId,:username,:role,:name,:phoneNr,:email)";
 		
 		KeyHolder holder = new GeneratedKeyHolder();
 		SqlParameterSource param = new MapSqlParameterSource()
@@ -50,7 +50,7 @@ public class UserDAO implements UserDAOInterface{
 
 	@Override
 	public void updateUser(User user) {
-		final String sql = "update user set userId=:userId, username=:username, role=:role, name=:name, phoneNr=:phoneNr, email=:email where userId=:userId";
+		final String sql = "update users set userId=:userId, username=:username, role=:role, name=:name, phoneNr=:phoneNr, email=:email where userId=:userId";
 		
 		KeyHolder holder = new GeneratedKeyHolder();
 		SqlParameterSource param = new MapSqlParameterSource()
@@ -65,7 +65,7 @@ public class UserDAO implements UserDAOInterface{
 
 	@Override
 	public void executeUpdateUser(User user) {
-		final String sql = "update user set userId=:userId, username=:username, role=:role, name=:name, phoneNr=:phoneNr, email=:email where userId=:userId";
+		final String sql = "update users set userId=:userId, username=:username, role=:role, name=:name, phoneNr=:phoneNr, email=:email where userId=:userId";
 		
 		Map<String,Object> map=new HashMap<String,Object>();
 		map.put("userId", user.getUserId());
@@ -87,7 +87,7 @@ public class UserDAO implements UserDAOInterface{
 
 	@Override
 	public void deleteUser(User user) {
-		final String sql = "delete from user where userId=:userId";
+		final String sql = "delete from users where userId=:userId";
 		
 		Map<String,Object> map=new HashMap<String,Object>();
 		map.put("userId", user.getUserId());

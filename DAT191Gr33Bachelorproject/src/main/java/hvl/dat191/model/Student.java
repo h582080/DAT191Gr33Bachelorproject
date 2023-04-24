@@ -12,7 +12,6 @@ public class Student {
 	
 	@Id 
 	private int studentId;
-	
 	private String name;
 	private int phoneNr;
 	private String email;

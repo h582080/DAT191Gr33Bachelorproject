@@ -1,4 +1,4 @@
-package hvl.dat191.service;
+package hvl.dat191.serviceimpl;
 
 import java.util.List;
 
@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import hvl.dat191.dao.ExternalDAO;
 import hvl.dat191.model.External;
+import hvl.dat191.service.ExternalService;
 
 @Service
 public class ExternalServiceImpl implements ExternalService{

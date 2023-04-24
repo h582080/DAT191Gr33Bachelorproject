@@ -12,10 +12,9 @@ public class ProjCollRowMapper implements RowMapper<Projectcollection> {
 	@Override
 	public Projectcollection mapRow(ResultSet rs, int rowNum) throws SQLException {
 		Projectcollection pcol = new Projectcollection(
-				//String eller int?
-				rs.getString("collectionId"),
+				rs.getInt("collectionId"),
 				rs.getInt("template"),
-				rs.getString("collectionTittel"),
+				rs.getString("collectionTitle"),
 				rs.getString("semester"));
 		return pcol;
 	}

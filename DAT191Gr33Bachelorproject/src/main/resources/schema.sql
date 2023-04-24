@@ -2,7 +2,7 @@ CREATE TABLE external
  (
    externalId int NOT NULL,
    name varchar (100) NOT NULL,
-   companyname varchar (100) NOT NULL,
+   companyName varchar (100) NOT NULL,
    phoneNr int NOT NULL,
    email varchar(100) NOT NULL,
    PRIMARY KEY (externalId)
@@ -37,7 +37,7 @@ CREATE TABLE client
  
 );
 
-CREATE TABLE "user"
+CREATE TABLE users
 (
   userId int NOT NULL,
   username varchar (20) NOT NULL,
@@ -72,7 +72,7 @@ CREATE TABLE projectcollection
 (
    collectionId int NOT NULL,
    template int NOT NULL,
-   collectionTitel varchar (100) NOT NULL,
+   collectionTitle varchar (100) NOT NULL,
    semester varchar (100) NOT NULL,
    PRIMARY KEY (collectionId)
    
