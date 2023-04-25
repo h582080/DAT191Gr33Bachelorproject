@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta name="viewport" content="with=device-width, initial-scale=1.0", charset=UTF-8>
-	<title>Opprett oppdragsgiver</title>
+	<title>Forhåndsvisning</title>
 	<link rel="stylesheet" href="pdf.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
 				<ul>
 					<li><a href="front.html">HJEM</a></li>
 					<li><a href="">MIN PROFIL</a></li>
-					<li><a href="">MINE PROSJEKTFORSLAG</a></li>
+					<li><a href="mineprosjekt.html">MINE PROSJEKTFORSLAG</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -36,48 +36,17 @@
 		
 		</section>
 		
+		
 		<section class="resten">
 		<div id="checkboxes">
-			 <h1>3. Forhåndsvisning av prosjektbeskrivelse (PDF)</h1>
-  			<label> Firmanavn/prosjekttilbyder: </label>  
-  			<div id="space"> 
-				<input type="text" name="Firmanavn/prosjekttilbyder" placeholder= "Firmanavn/prosjekttilbyder" size="15" required /> 
-			</div>
-			<label> Kontaktperson: </label> 
-			<div id="space">	
-			  
-				<input type="text" name="Kontaktperson" placeholder="Kontaktperson" size="15" required />   
-			</div>
-			
-			<label> Tlfnr/mailadresse: </label> 
-			<div id="space">
-			
-				<input type="text" name="Tlfnr/mailadresse" placeholder="Tlfnr/mailadresse" size="15"required /> 
-			</div> 
-			
-			<label> Kortfattet beskrivelse av firma/prosjekttilbyder: </label>  
-			<div id="space">  
-				<input type="text" name="Beskrivelse av firma/prosjekttilbyder" placeholder="Beskrivelse av firma/prosjekttilbyder" size="15"required /> 
-			</div>  
-			 
-				<label> Geografisk lokasjon: </label>   
-				<select>  
-					<option value="Sted">Sted</option>  
-					<option value="Førde">Bergen</option> 
-					<option value="Bergen">Bergensregionen</option>  
-					<option value="Stord">Førde</option> 
-					<option value="Stord">Sogn</option>   
-					<option value="Stord">Vestland forøvrig</option> 
-					<option value="Stord">Annet</option> 
-				</select>  
-			
-			
-		</div>
-			<a href="fullfort.html"><div id="button">Opprett prosjektforslag</div></a>
-		</div>
+			 <h1>3. Forhåndsvisning</h1>
+  		</div>
+  			
+		<div id="preview"><embed src="files/prosjektbes.pdf" width="800px" height="600px"/></div>
 		
-	
-	</section>
+		<a href="fullfort.html"><div id="button">Opprett prosjektforslag</div></a>
+		
+		</section>
 	
 
 </body>
