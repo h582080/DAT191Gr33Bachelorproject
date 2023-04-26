@@ -19,6 +19,7 @@ public class User {
 	private String name;
 	private int phoneNr;
 	private String email;
+	
 	public User(int userId, String username, String role, String name, int phoneNr, String email) {
 		this.userId = userId;
 		this.username = username;

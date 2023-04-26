@@ -14,12 +14,19 @@ public class ProjectdescriptionRowMapper implements RowMapper<Projectdescription
 				
 			
 		Projectdescription projectDsc = new Projectdescription
-				(Integer.parseInt(rs.getString("projectId")), rs.getString("projectTitel"), 
-						rs.getString("companyInfo"), rs.getString("projectDescription"),
-						rs.getString("tools"), rs.getString("language"), 
-						rs.getString("programminglanguage"), rs.getString("projectType"),
-						rs.getString("webAddress"), rs.getString("contactPerson"),
-						rs.getString("status"), rs.getString("semester"),
+				(Integer.parseInt(
+						rs.getString("projectId")), 
+						rs.getString("projectTitel"), 
+						rs.getString("companyInfo"), 
+						rs.getString("projectDescription"),
+						rs.getString("tools"), 
+						rs.getString("language"), 
+						rs.getString("programminglanguage"), 
+						rs.getString("projectType"),
+						rs.getString("webAddress"), 
+						rs.getString("contactPerson"),
+						rs.getString("status"), 
+						rs.getString("semester"),
 						rs.getString("dateOfApproval"));
 		
 		return projectDsc;

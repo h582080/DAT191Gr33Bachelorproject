@@ -21,11 +21,15 @@ public class Projectdescription {
 	private String language;
 	private String programminglanguage;
 	private String projectType;
+	private String tema;
 	private String webAddress;
 	private String contactPerson;
 	private String status;
 	private String semester;
 	private String dateOfApproval;
+	
+	
+	private User user;
 	
 	public Projectdescription(int projectId, String projectTitel, String companyInfo, String projectDescription,
 			String tools, String language, String programminglanguage, String projectType, String webAddress,

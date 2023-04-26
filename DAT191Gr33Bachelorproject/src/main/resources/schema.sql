@@ -63,7 +63,7 @@ CREATE TABLE projectdescription
   contactPerson varchar (100) NOT NULL,
   status varchar (20) NOT NULL,
   semester varchar (100) NOT NULL,
-  dateOfApproval DATE NOT NULL,
+  dateOfApproval varchar (30),
   PRIMARY KEY (projectId)
   
 );

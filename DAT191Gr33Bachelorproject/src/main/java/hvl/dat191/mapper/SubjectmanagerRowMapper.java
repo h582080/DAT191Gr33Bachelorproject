@@ -13,8 +13,10 @@ public class SubjectmanagerRowMapper implements RowMapper<Subjectmanager>{
 	public Subjectmanager mapRow(ResultSet rs, int rowNum) throws SQLException {
 		
 		Subjectmanager subjectmanager = 
-				new Subjectmanager(Integer.parseInt(rs.getString("subjectmanagerId")),
-						rs.getString("name"), rs.getString("email"));
+				new Subjectmanager(
+						Integer.parseInt(rs.getString("subjectmanagerId")),
+						rs.getString("name"), 
+						rs.getString("email"));
 		return subjectmanager;
 	}
 	
