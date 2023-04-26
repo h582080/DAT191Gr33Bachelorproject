@@ -3,6 +3,8 @@ package hvl.dat191.model;
 
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
@@ -12,6 +14,7 @@ import jakarta.persistence.Table;
 public class User {
 	
 	@Id
+	@GeneratedValue(strategy=GenerationType.SEQUENCE)
 	private int userId;
 	
 	private String username;
@@ -20,8 +23,7 @@ public class User {
 	private int phoneNr;
 	private String email;
 	
-	public User(int userId, String username, String role, String name, int phoneNr, String email) {
-		this.userId = userId;
+	public User(String username, String role, String name, int phoneNr, String email) {
 		this.username = username;
 		this.role = role;
 		this.name = name;

@@ -12,7 +12,6 @@ public class InternalRowMapper implements RowMapper<Internal> {
 	@Override
 	public Internal mapRow(ResultSet rs, int rowNum) throws SQLException {
 		Internal internal = new Internal(
-				rs.getInt("internalId"),
 				rs.getString("name"),
 				rs.getInt("phoneNr"),
 				rs.getString("email")

@@ -13,9 +13,7 @@ public class ProjectdescriptionRowMapper implements RowMapper<Projectdescription
 	public Projectdescription mapRow(ResultSet rs, int rowNum) throws SQLException {
 				
 			
-		Projectdescription projectDsc = new Projectdescription
-				(Integer.parseInt(
-						rs.getString("projectId")), 
+		Projectdescription projectDsc = new Projectdescription(
 						rs.getString("projectTitel"), 
 						rs.getString("companyInfo"), 
 						rs.getString("projectDescription"),

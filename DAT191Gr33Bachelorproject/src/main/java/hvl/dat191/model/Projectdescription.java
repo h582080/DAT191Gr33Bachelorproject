@@ -6,12 +6,15 @@ import java.sql.Date;
 import jakarta.persistence.Table;
 import jakarta.persistence.Id;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 
 @Entity
 @Table(name = "projectdescription")
 public class Projectdescription {
 	
 	@Id
+	@GeneratedValue(strategy=GenerationType.SEQUENCE)
 	private int projectId;
 	
 	private String projectTitel;
@@ -31,10 +34,9 @@ public class Projectdescription {
 	
 	private User user;
 	
-	public Projectdescription(int projectId, String projectTitel, String companyInfo, String projectDescription,
+	public Projectdescription(String projectTitel, String companyInfo, String projectDescription,
 			String tools, String language, String programminglanguage, String projectType, String webAddress,
 			String contactPerson, String status, String semester, String dateOfApproval) {
-		this.projectId = projectId;
 		this.projectTitel = projectTitel;
 		this.companyInfo = companyInfo;
 		this.projectDescription = projectDescription;

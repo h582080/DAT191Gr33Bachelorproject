@@ -13,7 +13,6 @@ public class StudentRowMapper implements RowMapper<Student> {
 	public Student mapRow(ResultSet rs, int rowNum) throws SQLException {
 		
 		Student student = new Student(
-				rs.getInt("studentId"),
 				rs.getString("name"),
 				rs.getInt("phoneNr"),
 				rs.getString("email"));

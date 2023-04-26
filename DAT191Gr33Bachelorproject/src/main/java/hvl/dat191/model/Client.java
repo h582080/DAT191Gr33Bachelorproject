@@ -2,6 +2,8 @@ package hvl.dat191.model;
 
 import jakarta.persistence.Table;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 
@@ -10,14 +12,15 @@ import jakarta.persistence.Id;
 public class Client {
 	
 	@Id
+	@GeneratedValue(strategy=GenerationType.SEQUENCE)
 	private int clientId;
+	
 	private int maxNumberOfProjectsSemester;
 	private String clientType;
 	
 	
 	
-	public Client(int clientId, int maxNumberOfProjectsSemester, String clientType) {
-		this.clientId = clientId;
+	public Client(int maxNumberOfProjectsSemester, String clientType) {
 		this.maxNumberOfProjectsSemester = maxNumberOfProjectsSemester;
 		this.clientType = clientType;
 	}

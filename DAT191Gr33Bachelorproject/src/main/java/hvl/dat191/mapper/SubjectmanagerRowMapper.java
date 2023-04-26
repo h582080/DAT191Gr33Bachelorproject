@@ -14,7 +14,6 @@ public class SubjectmanagerRowMapper implements RowMapper<Subjectmanager>{
 		
 		Subjectmanager subjectmanager = 
 				new Subjectmanager(
-						Integer.parseInt(rs.getString("subjectmanagerId")),
 						rs.getString("name"), 
 						rs.getString("email"));
 		return subjectmanager;

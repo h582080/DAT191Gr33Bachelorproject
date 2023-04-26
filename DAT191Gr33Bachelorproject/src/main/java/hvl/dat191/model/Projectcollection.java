@@ -4,20 +4,22 @@ package hvl.dat191.model;
 import jakarta.persistence.Table;
 import jakarta.persistence.Id;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 
 @Entity
 @Table(name = "projectcollection")
 public class Projectcollection {
 	
 	@Id
+	@GeneratedValue(strategy=GenerationType.SEQUENCE)
 	private int collectionId;
 	
 	private int template;
 	private String collectionTitle;
 	private String semester;
 	
-	public Projectcollection(int id, int template, String collectionTitle, String semester) {
-		this.collectionId = id;
+	public Projectcollection(int template, String collectionTitle, String semester) {
 		this.template = template;
 		this.collectionTitle = collectionTitle;
 		this.semester = semester;

@@ -26,7 +26,6 @@ public class OpprettProsjektController {
 			@RequestParam String semester, @RequestParam String dateOfApproval ) {
 		
 		Projectdescription projectdescription = new Projectdescription(
-				0,
 				projectTitel, 
 				companyInfo,
 				projectDescription,

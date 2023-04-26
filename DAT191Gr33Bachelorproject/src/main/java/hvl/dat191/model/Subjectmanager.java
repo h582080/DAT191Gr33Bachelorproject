@@ -4,19 +4,21 @@ package hvl.dat191.model;
 import jakarta.persistence.Table;
 import jakarta.persistence.Id;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 
 @Entity
 @Table(name = "subjectmanager")
 public class Subjectmanager {
 	
 	@Id
+	@GeneratedValue(strategy=GenerationType.SEQUENCE)
 	private int subjectmanagerId;
 	
 	private String name;
 	private String email;
 	
-	public Subjectmanager(int subjectmanagerId, String name, String email) {
-		this.subjectmanagerId = subjectmanagerId;
+	public Subjectmanager(String name, String email) {
 		this.name = name;
 		this.email = email;
 	}

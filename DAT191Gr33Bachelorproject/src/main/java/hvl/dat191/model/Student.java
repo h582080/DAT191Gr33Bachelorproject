@@ -5,20 +5,22 @@ import jakarta.persistence.Table;
 import jakarta.persistence.Id;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 
 @Entity
 @Table(name = "student")
 public class Student {
 	
 	@Id 
+	@GeneratedValue(strategy=GenerationType.SEQUENCE)
 	private int studentId;
 	
 	private String name;
 	private int phoneNr;
 	private String email;
 	
-	public Student(int studentId, String name, int phoneNr, String email) {
-		this.studentId = studentId;
+	public Student(String name, int phoneNr, String email) {
 		this.name = name;
 		this.phoneNr = phoneNr;
 		this.email = email;

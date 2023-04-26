@@ -12,7 +12,6 @@ public class ExternalRowMapper implements RowMapper<External> {
 	@Override
 	public External mapRow(ResultSet rs, int rowNum) throws SQLException {
 		External ext = new External(
-				rs.getInt("externalId"),
 				rs.getString("name"),
 				rs.getString("companyName"),
 				rs.getInt("phoneNr"),
