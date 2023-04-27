@@ -18,6 +18,10 @@ public class Subjectmanager {
 	private String name;
 	private String email;
 	
+	public Subjectmanager() {
+		
+	}
+	
 	public Subjectmanager(String name, String email) {
 		this.name = name;
 		this.email = email;

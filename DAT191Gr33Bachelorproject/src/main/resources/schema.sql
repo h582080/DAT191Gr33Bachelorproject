@@ -1,6 +1,6 @@
 CREATE TABLE external
  (
-   externalId int NOT NULL,
+   externalId SERIAL,
    name varchar (100) NOT NULL,
    companyName varchar (100) NOT NULL,
    phoneNr int NOT NULL,
@@ -10,7 +10,7 @@ CREATE TABLE external
 
 CREATE TABLE internal
 (
-   internalId int NOT NULL,
+   internalId SERIAL,
    name varchar(100) NOT NULL,
    phoneNr int NOT NULL,
    email varchar(100) NOT NULL,
@@ -20,7 +20,7 @@ CREATE TABLE internal
 
 CREATE TABLE student
 (
-   studentId int NOT NULL,
+   studentId SERIAL,
    name varchar(100) NOT NULL,
    phoneNr int NOT NULL,
    email varchar(100) NOT NULL,
@@ -30,7 +30,7 @@ CREATE TABLE student
 
 CREATE TABLE client
 (
-   clientId int NOT NULL,
+   clientId SERIAL,
    maxNumberOfProjectsSemester int NOT NULL,
    clientType varchar (10) NOT NULL,
    PRIMARY KEY (clientId)
@@ -39,7 +39,7 @@ CREATE TABLE client
 
 CREATE TABLE users
 (
-  userId int NOT NULL,
+  userId SERIAL,
   username varchar (20) NOT NULL,
   role varchar(20) NOT NULL,
   name varchar(100) NOT NULL,
@@ -51,7 +51,7 @@ CREATE TABLE users
 
 CREATE TABLE projectdescription
 (
-  projectId int NOT NULL,
+  projectId SERIAL,
   projectTitel varchar(100) NOT NULL,
   companyInfo varchar NOT NULL,
   projectDescription varchar NOT NULL,
@@ -70,7 +70,7 @@ CREATE TABLE projectdescription
 
 CREATE TABLE projectcollection
 (
-   collectionId int NOT NULL,
+   collectionId SERIAL,
    template int NOT NULL,
    collectionTitle varchar (100) NOT NULL,
    semester varchar (100) NOT NULL,

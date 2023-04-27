@@ -8,18 +8,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import hvl.dat191.model.Projectcollection;
 import hvl.dat191.service.MineProsjektService;
 
-@Controller
-@RequestMapping("/mineprosjekt")
+
 
 public class MineProsjektController {
 	
-	@Autowired
-	private MineProsjektService mps;
-	
-	@GetMapping
-	public void mineProsjekt() {		
-		//TODO
-	}
 	
 	
 

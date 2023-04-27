@@ -20,6 +20,10 @@ public class Student {
 	private int phoneNr;
 	private String email;
 	
+	public Student() {
+		
+	}
+	
 	public Student(String name, int phoneNr, String email) {
 		this.name = name;
 		this.phoneNr = phoneNr;

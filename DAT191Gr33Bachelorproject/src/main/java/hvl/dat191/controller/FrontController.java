@@ -6,12 +6,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import hvl.dat191.service.FrontService;
 
-@Controller
-@RequestMapping("/front")
+
 public class FrontController {
 	
-	@Autowired
-	private FrontService fs;
+	
 	
 	
 	

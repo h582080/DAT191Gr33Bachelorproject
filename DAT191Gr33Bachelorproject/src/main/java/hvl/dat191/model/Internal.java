@@ -19,6 +19,10 @@ public class Internal {
 	private int phoneNr;
 	private String email;
 	
+	public Internal() {
+		
+	}
+	
 	public Internal(String name, int phoneNr, String email) {
 		this.name = name;
 		this.phoneNr = phoneNr;

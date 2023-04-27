@@ -21,6 +21,10 @@ public class External {
 	private int phoneNr;
 	private String email;
 	
+	public External() {
+		
+	}
+	
 	public External(String name, String companyName, int phoneNr, String email) {
 		this.name = name;
 		this.companyName = companyName;

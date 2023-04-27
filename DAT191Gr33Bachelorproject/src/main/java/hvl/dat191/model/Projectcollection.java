@@ -19,6 +19,10 @@ public class Projectcollection {
 	private String collectionTitle;
 	private String semester;
 	
+	public Projectcollection() {
+		
+	}
+	
 	public Projectcollection(int template, String collectionTitle, String semester) {
 		this.template = template;
 		this.collectionTitle = collectionTitle;

@@ -22,8 +22,9 @@ public class OpprettProsjektController {
 			@RequestParam String companyInfo, @RequestParam String projectDescription, 
 			@RequestParam String tools, @RequestParam String language, 
 			@RequestParam String programminglanguage, @RequestParam String projectType,
-			@RequestParam String webAddress, @RequestParam String contactPerson, 
-			@RequestParam String semester, @RequestParam String dateOfApproval ) {
+			@RequestParam String theme, @RequestParam String webAddress, 
+			@RequestParam String contactPerson, @RequestParam String semester, 
+			@RequestParam String dateOfApproval ) {
 		
 		Projectdescription projectdescription = new Projectdescription(
 				projectTitel, 
@@ -33,6 +34,7 @@ public class OpprettProsjektController {
 				language,
 				programminglanguage,
 				projectType,
+				theme,
 				webAddress,
 				contactPerson,
 				"WAITING",

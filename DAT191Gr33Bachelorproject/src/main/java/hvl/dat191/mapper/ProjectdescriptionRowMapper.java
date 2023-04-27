@@ -21,6 +21,7 @@ public class ProjectdescriptionRowMapper implements RowMapper<Projectdescription
 						rs.getString("language"), 
 						rs.getString("programminglanguage"), 
 						rs.getString("projectType"),
+						rs.getString("tema"),
 						rs.getString("webAddress"), 
 						rs.getString("contactPerson"),
 						rs.getString("status"), 

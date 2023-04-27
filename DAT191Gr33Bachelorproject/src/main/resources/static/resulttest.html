@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html charset=ISO-8859-1">
+<title>Your project description</title>
+</head>
+<body>
+<h1> Your project description</h1>
+  <p th:text="'projectTitel: ' + ${projectdescription.projectTitel}" />
+  <p th:text="'companyInfo: ' + ${projectdescription.companyInfo}" />
+  <p th:text="'projectDescription: ' + ${projectdescription.projectDescription}" />
+  <p th:text="'tools: ' + ${projectdescription.tools}" />
+  <p th:text="'language: ' + ${projectdescription.language}" />
+  <p th:text="'programminglanguage: ' + ${projectdescription.programminglanguage}" />
+  <p th:text="'projectType: ' + ${projectdescription.projectType}" />
+  <p th:text="'theme: ' + ${projectdescription.theme}" />
+  <p th:text="'webAddress: ' + ${projectdescription.webAddress}" />
+  <p th:text="'contactPerson: ' + ${projectdescription.contactPerson}" />
+  <p th:text="'status: ' + ${projectdescription.status}" />
+  <p th:text="'semester: ' + ${projectdescription.semester}" />
+  <p th:text="'dateOfApproval: ' + ${projectdescription.dateOfApproval}" />
+  
+</body>
+</html>

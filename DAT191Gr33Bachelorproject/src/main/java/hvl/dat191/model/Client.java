@@ -18,7 +18,9 @@ public class Client {
 	private int maxNumberOfProjectsSemester;
 	private String clientType;
 	
-	
+	public Client() {
+		
+	}
 	
 	public Client(int maxNumberOfProjectsSemester, String clientType) {
 		this.maxNumberOfProjectsSemester = maxNumberOfProjectsSemester;

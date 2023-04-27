@@ -38,7 +38,7 @@ public class ProjectdescriptionDAO implements ProjectdescriptionDAOInterface {
 
 	@Override
 	public void insertProjectdescription(Projectdescription projectDsc) {
-		final String sql = "insert into projectdescription(projectId, projectTitel, companyInfo, projectDescription, tools, language, programminglanguage, projectType, webAddress, contactPerson, status, semester, dateOfApproval) values(:projectId,:projectTitel,:companyInfo,:projectDescription,:tools,:language,:programminglanguage,:projectType,:webAddress,:contactPerson,:status,:semester,:dateOfApproval)";
+		final String sql = "insert into projectdescription(projectId, projectTitel, companyInfo, projectDescription, tools, language, programminglanguage, projectType, theme, webAddress, contactPerson, status, semester, dateOfApproval) values(:projectId,:projectTitel,:companyInfo,:projectDescription,:tools,:language,:programminglanguage,:projectType,:theme,:webAddress,:contactPerson,:status,:semester,:dateOfApproval)";
 		
 		KeyHolder holder = new GeneratedKeyHolder();
 		SqlParameterSource param = new MapSqlParameterSource()
@@ -50,6 +50,7 @@ public class ProjectdescriptionDAO implements ProjectdescriptionDAOInterface {
 				.addValue("language", projectDsc.getLanguage())
 				.addValue("programminglanguage", projectDsc.getProgrammingLanguage())
 				.addValue("projectType", projectDsc.getProjectType())
+				.addValue("theme", projectDsc.getTheme())
 				.addValue("webAddress", projectDsc.getWebAddress())
 				.addValue("contactPerson", projectDsc.getContactPerson())
 				.addValue("status", projectDsc.getStatus())
@@ -60,7 +61,7 @@ public class ProjectdescriptionDAO implements ProjectdescriptionDAOInterface {
 
 	@Override
 	public void updateProjectdescription(Projectdescription projectDsc) {
-		final String sql = "update projectdescription set projectId=:projectId, projectTitel=:projectTitel, companyInfo=:companyInfo, projectDescription=:projectDescription, tools=:tools, language=:language, programminglanguage=:programminglanguage, projectType=:projectType, webAddress=:webAddress, contactPerson=:contactPerson, status=:status, semester=:semester, dateOfApproval=:dateOfApproval where projectId=:projectId";
+		final String sql = "update projectdescription set projectId=:projectId, projectTitel=:projectTitel, companyInfo=:companyInfo, projectDescription=:projectDescription, tools=:tools, language=:language, programminglanguage=:programminglanguage, projectType=:projectType, theme=:theme, webAddress=:webAddress, contactPerson=:contactPerson, status=:status, semester=:semester, dateOfApproval=:dateOfApproval where projectId=:projectId";
 		
 		
 		KeyHolder holder = new GeneratedKeyHolder();
@@ -73,6 +74,7 @@ public class ProjectdescriptionDAO implements ProjectdescriptionDAOInterface {
 				.addValue("language", projectDsc.getLanguage())
 				.addValue("programminglanguage", projectDsc.getProgrammingLanguage())
 				.addValue("projectType", projectDsc.getProjectType())
+				.addValue("theme", projectDsc.getTheme())
 				.addValue("webAddress", projectDsc.getWebAddress())
 				.addValue("contactPerson", projectDsc.getContactPerson())
 				.addValue("status", projectDsc.getStatus())
@@ -84,7 +86,7 @@ public class ProjectdescriptionDAO implements ProjectdescriptionDAOInterface {
 
 	@Override
 	public void executeUpdateProjectdescription(Projectdescription projectDsc) {
-		final String sql = "update projectdescription set projectId=:projectId, projectTitel=:projectTitel, companyInfo=:companyInfo, projectDescription=:projectDescription, tools=:tools, language=:language, programminglanguage=:programminglanguage, projectType=:projectType, webAddress=:webAddress, contactPerson=:contactPerson, status=:status, semester=:semester, dateOfApproval=:dateOfApproval where projectId=:projectId";
+		final String sql = "update projectdescription set projectId=:projectId, projectTitel=:projectTitel, companyInfo=:companyInfo, projectDescription=:projectDescription, tools=:tools, language=:language, programminglanguage=:programminglanguage, projectType=:projectType, theme=:theme, webAddress=:webAddress, contactPerson=:contactPerson, status=:status, semester=:semester, dateOfApproval=:dateOfApproval where projectId=:projectId";
 		
 		Map<String,Object> map=new HashMap<String,Object>();
 		map.put("projectId", projectDsc.getProjectId());
@@ -95,6 +97,7 @@ public class ProjectdescriptionDAO implements ProjectdescriptionDAOInterface {
 		map.put("language", projectDsc.getLanguage());
 		map.put("programminglanguage", projectDsc.getProgrammingLanguage());
 		map.put("projectType", projectDsc.getProjectType());
+		map.put("theme", projectDsc.getTheme());
 		map.put("webAddress", projectDsc.getWebAddress());
 		map.put("contactPerson", projectDsc.getContactPerson());
 		map.put("status", projectDsc.getStatus());

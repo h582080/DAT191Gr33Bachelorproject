@@ -14,7 +14,7 @@ import jakarta.persistence.Table;
 public class User {
 	
 	@Id
-	@GeneratedValue(strategy=GenerationType.SEQUENCE)
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private int userId;
 	
 	private String username;
@@ -22,6 +22,10 @@ public class User {
 	private String name;
 	private int phoneNr;
 	private String email;
+	
+	public User() {
+		
+	}
 	
 	public User(String username, String role, String name, int phoneNr, String email) {
 		this.username = username;
