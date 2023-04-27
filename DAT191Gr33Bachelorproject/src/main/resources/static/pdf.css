@@ -14,12 +14,11 @@
 }
 
 .resten{
-    padding-top: 20px;  
-    padding-left: 150px;
-    padding-right: 150px;
-    padding-bottom: 150px;
+    
+    padding-left: 30px;
+    padding-right: 50px;
   background-color: white;
-    margin-left: 50px;
+    
 }
 
 .naviger-reg ul li{
@@ -190,10 +189,10 @@ input[type=text]:focus{
 #checkboxes h1{
     color: black;
     font-size: 27px;
-    /*-webkit-text-stroke: 1px black;*/
+    margin-left: 60px;
+   
     
 }
-
 #checkboxes #space{
    
     background: #f1f1f1;
@@ -210,19 +209,20 @@ input[type=text]:focus{
 #button{
    
     background: black;
-    margin-top: 15px;
-    margin-bottom: 50px;
     border-radius: 8px;
     text-align: center;
     text-decoration: none;
-    padding: 15px 30px;
+   padding: 25px;
     font-size: 14px;
     cursor: pointer;
     font-weight: 580;
     border-radius: 8px;
     color: #fff;
     border: 1px solid #fff;
-   
+    position: relative;
+    top: 5px;
+    left: 25px;
+    margin-bottom: 50px;
 }
 
 a{
@@ -232,12 +232,11 @@ a{
 
 #button:hover{
     border: 1px solid #fff;
-    background: #3CEA97;
+    background: green;
     transition: 0.5s;
     text-decoration: none;
     
 }
-
 
 #preview{
     
