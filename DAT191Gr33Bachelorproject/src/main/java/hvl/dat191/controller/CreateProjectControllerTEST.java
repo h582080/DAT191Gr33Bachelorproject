@@ -9,14 +9,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import hvl.dat191.model.Projectdescription;
-import hvl.dat191.serviceTestsImpl.ProjectdescriptionServiceImpl;
+import hvl.dat191.service.ProjectdescriptionService;
 
 @Controller
 @RequestMapping("/createprojecttest")
 public class CreateProjectControllerTEST {
 	
 	
-    private ProjectdescriptionServiceImpl pdsi;
+    private ProjectdescriptionService pdsi;
 	
     @GetMapping("/projectdescription")
     public String createProjectForm(Model model) {

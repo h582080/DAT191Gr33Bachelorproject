@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import hvl.dat191.model.Internal;
-import hvl.dat191.serviceTests.InternalService;
+import hvl.dat191.service.InternalService;
 
 @RestController
 @RequestMapping("/internalApp")

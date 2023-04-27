@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import hvl.dat191.model.User;
-import hvl.dat191.serviceTests.UserService;
+import hvl.dat191.service.UserService;
 
 @RestController
 @RequestMapping("/userApp")

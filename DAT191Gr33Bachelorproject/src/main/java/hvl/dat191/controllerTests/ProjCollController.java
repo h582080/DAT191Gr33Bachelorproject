@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import hvl.dat191.model.Projectcollection;
-import hvl.dat191.serviceTests.ProjCollService;
+import hvl.dat191.service.ProjCollService;
 
 @RestController
 @RequestMapping("/collectionApp")

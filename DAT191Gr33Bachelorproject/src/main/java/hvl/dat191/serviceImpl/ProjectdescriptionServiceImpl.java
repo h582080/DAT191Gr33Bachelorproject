@@ -1,4 +1,4 @@
-package hvl.dat191.serviceTestsImpl;
+package hvl.dat191.serviceImpl;
 
 import java.util.List;
 
@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 
 import hvl.dat191.dao.ProjectdescriptionDAO;
 import hvl.dat191.model.Projectdescription;
-import hvl.dat191.serviceTests.ProjectdescriptionService;
+import hvl.dat191.service.ProjectdescriptionService;
 
 @Service
 public class ProjectdescriptionServiceImpl implements ProjectdescriptionService {

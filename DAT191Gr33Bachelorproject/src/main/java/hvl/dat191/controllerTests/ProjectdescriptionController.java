@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import hvl.dat191.model.Projectdescription;
-import hvl.dat191.serviceTests.ProjectdescriptionService;
+import hvl.dat191.service.ProjectdescriptionService;
 
 @RestController
 @RequestMapping("/projectdescriptionApp")

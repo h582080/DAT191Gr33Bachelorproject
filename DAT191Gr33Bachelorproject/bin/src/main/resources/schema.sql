@@ -1,18 +1,18 @@
 CREATE TABLE external
  (
-   externalId SERIAL,
-   name varchar (100) NOT NULL,
-   companyName varchar (100) NOT NULL,
-   phoneNr int NOT NULL,
+   externalId int (20) NOT NULL
+   name varchar(100) NOT NULL,
+   companyNavn varchar(100) NOT NULL,
+   phoneNr int (30) NOT NULL,
    email varchar(100) NOT NULL,
    PRIMARY KEY (externalId)
 );
 
 CREATE TABLE internal
 (
-   internalId SERIAL,
+   internalId int (20) NOT NULL
    name varchar(100) NOT NULL,
-   phoneNr int NOT NULL,
+   phoneNr int (30) NOT NULL,
    email varchar(100) NOT NULL,
    PRIMARY KEY (internalId)
    
@@ -20,9 +20,9 @@ CREATE TABLE internal
 
 CREATE TABLE student
 (
-   studentId SERIAL,
+   studentId int (20) NOT NULL
    name varchar(100) NOT NULL,
-   phoneNr int NOT NULL,
+   phoneNr int (30) NOT NULL,
    email varchar(100) NOT NULL,
    PRIMARY KEY (studentId)
    
@@ -30,24 +30,20 @@ CREATE TABLE student
 
 CREATE TABLE client
 (
-   clientId SERIAL,
-   name varchar (30) NOT NULL,
-   companyName varchar (30),
-   phoneNr int NOT NULL,
-   email varchar (30) NOT NULL,
-   maxNumberOfProjectsSemester int NOT NULL,
-   clientType varchar (10) NOT NULL,
+   clientId int (20) NOT NULL,
+   maxNumberOfProjectsSemester int (1) NOT NULL,
+   clientType varchar (10) NOT NULL
    PRIMARY KEY (clientId)
  
 );
 
-CREATE TABLE users
+CREATE TABLE user
 (
-  userId SERIAL,
+  userId int (20) NOT NULL,
   username varchar (20) NOT NULL,
   role varchar(20) NOT NULL,
   name varchar(100) NOT NULL,
-  phoneNr int NOT NULL,
+  phoneNr int (20) NOT NULL,
   email varchar (100) NOT NULL,
   PRIMARY KEY (userId)
  
@@ -55,28 +51,28 @@ CREATE TABLE users
 
 CREATE TABLE projectdescription
 (
-  projectId SERIAL,
+  projectId int (20) NOT NULL,
   projectTitel varchar(100) NOT NULL,
-  companyInfo varchar NOT NULL,
-  projectDescription varchar NOT NULL,
-  tools varchar NOT NULL,
-  language varchar NOT NULL,
-  programminglanguage varchar NOT NULL,
-  projectType varchar NOT NULL,
-  webAddress varchar NOT NULL,
+  companyInfo varchar () NOT NULL,
+  projectDescription varchar () NOT NULL,
+  tools varchar () NOT NULL,
+  language varchar () NOT NULL,
+  programminglanguage varchar () NOT NULL,
+  projectType varchar () NOT NULL,
+  webAddress varchar () NOT NULL
   contactPerson varchar (100) NOT NULL,
   status varchar (20) NOT NULL,
   semester varchar (100) NOT NULL,
-  dateOfApproval varchar (30),
+  dateOfApproval DATE NOT NULL,
   PRIMARY KEY (projectId)
   
 );
 
 CREATE TABLE projectcollection
 (
-   collectionId SERIAL,
-   template int NOT NULL,
-   collectionTitle varchar (100) NOT NULL,
+   collectionId int (20) NOT NULL,
+   template int (2) NOT NULL,
+   collectionTitel varchar (100) NOT NULL,
    semester varchar (100) NOT NULL,
    PRIMARY KEY (collectionId)
    
@@ -84,9 +80,9 @@ CREATE TABLE projectcollection
 
 CREATE table subjectmanager
 (
-   subjectmanagerId int NOT NULL,
+   subjectmanagerId int (20) NOT NULL,
    name varchar (100) NOT NULL,
    email varchar(100) NOT NULL,
-   PRIMARY KEY (subjectmanagerId)   
+   PRIMARY KEY ()subjectmanagerId)   
 );
 

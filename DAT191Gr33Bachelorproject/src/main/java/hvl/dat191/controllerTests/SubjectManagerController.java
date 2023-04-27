@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import hvl.dat191.model.Subjectmanager;
-import hvl.dat191.serviceTests.SubjectManagerService;
+import hvl.dat191.service.SubjectManagerService;
 
 @RestController
 @RequestMapping("/subjectManagerApp")

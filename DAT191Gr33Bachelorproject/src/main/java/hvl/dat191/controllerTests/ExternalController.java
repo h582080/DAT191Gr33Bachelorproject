@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import hvl.dat191.model.External;
-import hvl.dat191.serviceTests.ExternalService;
+import hvl.dat191.service.ExternalService;
 
 
 @RestController

@@ -1,4 +1,4 @@
-package hvl.dat191.serviceTestsImpl;
+package hvl.dat191.serviceImpl;
 
 import java.util.List;
 
@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.*;
 import org.springframework.stereotype.Service;
 
 import hvl.dat191.model.Projectcollection;
-import hvl.dat191.serviceTests.ProjCollService;
+import hvl.dat191.service.ProjCollService;
 import hvl.dat191.dao.ProjectcollectionDAO;
 
 @Service

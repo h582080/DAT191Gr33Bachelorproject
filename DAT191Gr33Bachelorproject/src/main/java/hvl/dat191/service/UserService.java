@@ -1,4 +1,4 @@
-package hvl.dat191.serviceTests;
+package hvl.dat191.service;
 
 import java.util.List;
 

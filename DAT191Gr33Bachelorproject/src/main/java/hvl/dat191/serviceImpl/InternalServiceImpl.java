@@ -1,4 +1,4 @@
-package hvl.dat191.serviceTestsImpl;
+package hvl.dat191.serviceImpl;
 
 import java.util.List;
 
@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import hvl.dat191.model.Internal;
-import hvl.dat191.serviceTests.InternalService;
+import hvl.dat191.service.InternalService;
 import hvl.dat191.dao.InternalDAO;
 
 @Service

@@ -15,6 +15,10 @@ public class Client {
 	@GeneratedValue(strategy=GenerationType.SEQUENCE)
 	private int clientId;
 	
+	private String name;
+	private String companyName;
+	private int phoneNr;
+	private String email;
 	private int maxNumberOfProjectsSemester;
 	private String clientType;
 	
@@ -22,7 +26,8 @@ public class Client {
 		
 	}
 	
-	public Client(int maxNumberOfProjectsSemester, String clientType) {
+	public Client(String name, String companyName, int phoneNr,
+	 String email, int maxNumberOfProjectsSemester, String clientType) {
 		this.maxNumberOfProjectsSemester = maxNumberOfProjectsSemester;
 		this.clientType = clientType;
 	}
@@ -35,6 +40,38 @@ public class Client {
 		this.clientId = clientId;
 	}
 	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getCompanyName() {
+		return companyName;
+	}
+
+	public void setCompanyName(String companyName) {
+		this.companyName = companyName;
+	}
+
+	public int getPhoneNr() {
+		return phoneNr;
+	}
+
+	public void setPhoneNr(int phoneNr) {
+		this.phoneNr = phoneNr;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
 	public int getMaxNumberOfProjectsSemester() {
 		return maxNumberOfProjectsSemester;
 	}

@@ -1,4 +1,4 @@
-package hvl.dat191.serviceTestsImpl;
+package hvl.dat191.serviceImpl;
 
 import java.util.List;
 
@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 
 import hvl.dat191.dao.SubjectmanagerDAO;
 import hvl.dat191.model.Subjectmanager;
-import hvl.dat191.serviceTests.SubjectManagerService;
+import hvl.dat191.service.SubjectManagerService;
 
 @Service
 public class SubjectManagerServiceImpl implements SubjectManagerService {

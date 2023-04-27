@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import hvl.dat191.model.Student;
-import hvl.dat191.serviceTests.StudentService;
+import hvl.dat191.service.StudentService;
 
 @RestController
 @RequestMapping("/studentApp")

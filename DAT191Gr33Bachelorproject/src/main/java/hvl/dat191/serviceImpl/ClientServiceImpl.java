@@ -1,4 +1,4 @@
-package hvl.dat191.serviceTestsImpl;
+package hvl.dat191.serviceImpl;
 
 import java.util.List;
 
@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 
 import hvl.dat191.dao.ClientDAO;
 import hvl.dat191.model.Client;
-import hvl.dat191.serviceTests.ClientService;
+import hvl.dat191.service.ClientService;
 
 @Service
 public class ClientServiceImpl implements ClientService {
