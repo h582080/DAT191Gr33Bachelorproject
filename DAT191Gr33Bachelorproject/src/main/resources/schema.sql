@@ -38,7 +38,6 @@ CREATE TABLE client
    maxNumberOfProjectsSemester int NOT NULL,
    clientType varchar (10) NOT NULL,
    PRIMARY KEY (clientId)
- 
 );
 
 CREATE TABLE users

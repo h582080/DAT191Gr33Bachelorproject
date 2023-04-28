@@ -35,12 +35,11 @@ public class ClientDAO implements ClientDAOInterface{
 
 	@Override
 	public void insertClient(Client client) {
-		final String sql = "insert into client(clientId, name, companyName, phoneNr, email, maxNumberOfProjectsSemester, clientType) "
-				+ "values(:clientId,:name,:companyName,:phoneNr,:email,:maxNumberOfProjectsSemester,:clientType)";
+		final String sql = "insert into client(name, companyName, phoneNr, email, maxNumberOfProjectsSemester, clientType) "
+				+ "values(:name,:companyName,:phoneNr,:email,:maxNumberOfProjectsSemester,:clientType)";
 		
 		KeyHolder holder = new GeneratedKeyHolder();
 		SqlParameterSource param = new MapSqlParameterSource()
-				.addValue("clientId", client.getClientId())
 				.addValue("name", client.getName())
 				.addValue("companyName", client.getCompanyName())
 				.addValue("phoneNr", client.getPhoneNr())
