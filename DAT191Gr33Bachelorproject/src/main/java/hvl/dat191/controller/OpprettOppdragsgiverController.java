@@ -1,5 +1,8 @@
 package hvl.dat191.controller;
 
+import java.util.Arrays;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -9,6 +12,7 @@ import hvl.dat191.model.Client;
 import hvl.dat191.service.ClientService;
 
 @Controller
+@ControllerAdvice
 public class OpprettOppdragsgiverController {
 	
 	@Autowired
@@ -17,24 +21,16 @@ public class OpprettOppdragsgiverController {
 	@GetMapping("/opprettoppdragsgiver")
 	public String opprettOppdragsgiver(Model model) {
 		Client client = new Client();
+		/*List<String> locList = Arrays.asList("Bergen", "Bergensregionen", 
+		 * "Førde", "Sogn", "Vestland", "Annet");
+		model.addAttribute("locList", locList);
+		 */
 		model.addAttribute("client", client);
 		return "opprettoppdragsgiver";
 	}
 	
-	@PostMapping
-	public void opprettOppdragsgiver(@RequestParam String name,
-			@RequestParam String companyName,
-			@RequestParam int phoneNr,
-			@RequestParam String email) {
-		
-		Client client = new Client(
-				name,
-				companyName,
-				phoneNr,
-				email,
-				5,
-				"External"
-				);
+	@PostMapping("/opprettoppdragsgiver")
+	public void opprettOppdragsgiver(@ModelAttribute("name") Client client) {
 		service.insertClient(client);
 	}
 

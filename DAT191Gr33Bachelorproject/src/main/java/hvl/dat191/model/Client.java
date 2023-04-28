@@ -22,8 +22,7 @@ public class Client {
 	private int maxNumberOfProjectsSemester;
 	private String clientType;
 	
-	public Client() {
-		
+	public Client() {	
 	}
 	
 	public Client(String name, String companyName, int phoneNr,

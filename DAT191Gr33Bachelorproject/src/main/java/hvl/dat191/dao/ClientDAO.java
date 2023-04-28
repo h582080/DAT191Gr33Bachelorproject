@@ -35,11 +35,16 @@ public class ClientDAO implements ClientDAOInterface{
 
 	@Override
 	public void insertClient(Client client) {
-		final String sql = "insert into client(clientId, maxNumberOfProjectsSemester, clientType) values(:clientId,:maxNumberOfProjectsSemester,:clientType)";
+		final String sql = "insert into client(clientId, name, companyName, phoneNr, email, maxNumberOfProjectsSemester, clientType) "
+				+ "values(:clientId,:name,:companyName,:phoneNr,:email,:maxNumberOfProjectsSemester,:clientType)";
 		
 		KeyHolder holder = new GeneratedKeyHolder();
 		SqlParameterSource param = new MapSqlParameterSource()
 				.addValue("clientId", client.getClientId())
+				.addValue("name", client.getName())
+				.addValue("companyName", client.getCompanyName())
+				.addValue("phoneNr", client.getPhoneNr())
+				.addValue("email", client.getEmail())
 				.addValue("maxNumberOfProjectsSemester", client.getMaxNumberOfProjectsSemester())
 				.addValue("clientType", client.getClientType());
 		template.update(sql, param, holder);	
@@ -47,11 +52,16 @@ public class ClientDAO implements ClientDAOInterface{
 
 	@Override
 	public void updateClient(Client client) {
-		final String sql = "update client set maxNumberOfProjectsSemester=:maxNumberOfProjectsSemester, clientType=:clientType where clientId=:clientId";
+		final String sql = "update client set name=:name, companyName=:companyName, phoneNr=:phoneNr, email=:email,"
+				+ " maxNumberOfProjectsSemester=:maxNumberOfProjectsSemester, clientType=:clientType where clientId=:clientId";
 
 		KeyHolder holder = new GeneratedKeyHolder();
 		SqlParameterSource param = new MapSqlParameterSource()
 				.addValue("clientId", client.getClientId())
+				.addValue("name", client.getName())
+				.addValue("companyName", client.getCompanyName())
+				.addValue("phoneNr", client.getPhoneNr())
+				.addValue("email", client.getEmail())
 				.addValue("maxNumberOfProjectsSemester", client.getMaxNumberOfProjectsSemester())
 				.addValue("clientType", client.getClientType());
 		template.update(sql, param, holder);
@@ -59,10 +69,15 @@ public class ClientDAO implements ClientDAOInterface{
 
 	@Override
 	public void executeUpdateClient(Client client) {
-		final String sql = "update client set maxNumberOfProjectsSemester=:maxNumberOfProjectsSemester, clientType=:clientType where clientId=:clientId";
+		final String sql = "update client set name=:name, companyName=:companyName, phoneNr=:phoneNr, email=:email,"
+				+ " maxNumberOfProjectsSemester=:maxNumberOfProjectsSemester, clientType=:clientType where clientId=:clientId";
 		
 		Map<String, Object> map = new HashMap<String, Object>();
 		map.put("clientId", client.getClientId());
+		map.put("name", client.getName());
+		map.put("companyName", client.getCompanyName());
+		map.put("phoneNr", client.getPhoneNr());
+		map.put("email", client.getEmail());
 		map.put("maxNumberOfProjectsSemester", client.getMaxNumberOfProjectsSemester());
 		map.put("clientType", client.getClientType());
 		
