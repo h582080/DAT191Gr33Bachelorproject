@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html xmlns:th="https://www.thymeleaf.org">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Test for project creation form</title>
 </head>
 <body>
  <h1>Submit your project</h1>
- <form th:action="@{/projectdescription}" th:object="${projectdescription}" method="post">
+ <form th:action="@{/projectdescription}" th:object="${projectdescription}"method="post"> 
      <p>Project title <input type="text" th:field="*{projectTitel}" /></p>
      <p>Company information<input type="text" th:field="*{companyInfo}" /></p>
      <p>Project description<input type="text" th:field="*{projectDescription}" /></p>
@@ -19,10 +19,8 @@
      <p>Contact person<input type="text" th:field="*{contactPerson}" /></p>
      <p>Status<input type="text" th:field="*{status}" /></p>
      <p>Semester<input type="text" th:field="*{semester}" /></p>
-     <p>Date of approval<input type="text" th:field="*{dateOfApproval}" /></p>
-     
+     <p>Date of approval<input type="text" th:field="*{dateOfApproval}" /></p>     
      <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
- 
  </form>
 
 </body>

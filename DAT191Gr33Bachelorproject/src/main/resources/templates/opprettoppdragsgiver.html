@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="with=device-width, initial-scale=1.0" charset=UTF-8>
+	<meta name="viewport" content="with=device-width, initial-scale=1.0", charset=UTF-8>
 	<title>Opprett oppdragsgiver</title>
 	<link rel="stylesheet" href="opprettoppdragsgiver.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -37,46 +37,67 @@
 		</section>
 		
 		<section class="resten">
+		<form action="opprettoppdragsgiver.html" method="POST">
 		<div id="checkboxes">
+		
 			 <h1>2. Informasjon om oppdragsgiver</h1>
-  			<label> Firmanavn/prosjekttilbyder: </label>  
-  			<div id="space"> 
-				<input type="text" name="Firmanavn/prosjekttilbyder" placeholder= "Firmanavn/prosjekttilbyder" size="15" required /> 
-			</div>
-			<label> Kontaktperson: </label> 
-			<div id="space">	
-			  
-				<input type="text" name="Kontaktperson" placeholder="Kontaktperson" size="15" required />   
-			</div>
-			
-			<label> Tlfnr/mailadresse: </label> 
-			<div id="space">
-			
-				<input type="text" name="Tlfnr/mailadresse"  placeholder="Tlfnr/mailadresse" size="15"required /> 
-			</div> 
-			
-			<label> Kortfattet beskrivelse av firma/prosjekttilbyder: </label>  
-			<div id="space">  
-				<input type="text" name="Beskrivelse av firma/prosjekttilbyder" placeholder="Beskrivelse av firma/prosjekttilbyder" size="15"required /> 
-			</div>  
 			 
-				<label> Geografisk lokasjon: </label>   
-				<select>  
-					<option value="Sted">Sted</option>  
-					<option value="Førde">Bergen</option> 
-					<option value="Bergen">Bergensregionen</option>  
-					<option value="Stord">Førde</option> 
-					<option value="Stord">Sogn</option>   
-					<option value="Stord">Vestland forøvrig</option> 
-					<option value="Stord">Annet</option> 
-				</select>  
+			 <div class="del1">
+	  			<label> Firmanavn/prosjekttilbyder: </label>  
+	  			<div id="space"> 
+					<input type="text" name="Firmanavn/prosjekttilbyder" placeholder= "Firmanavn/prosjekttilbyder" size="15" required /> 
+				</div>
+				<label> Kontaktperson: </label> 
+				<div id="space">	
+				  
+					<input type="text" name="Kontaktperson" placeholder="Kontaktperson" size="15" required />   
+				</div>
+				
+				<label> Tlfnr: </label> 
+				<div id="space">
+				
+					<input type="text" name="Tlfnr" placeholder="Tlfnr" size="15"required /> 
+				</div> 
+				
+				<label> Geografisk lokasjon: </label> 
+				<div id="space">
+					  
+					<select>  
+						<option value="Sted">Sted</option>  
+						<option value="Førde">Bergen</option> 
+						<option value="Bergen">Bergensregionen</option>  
+						<option value="Stord">Førde</option> 
+						<option value="Stord">Sogn</option>   
+						<option value="Stord">Vestland forøvrig</option> 
+						<option value="Stord">Annet</option> 
+					</select>  
+				</div>
+	
+			</div>
+		
 			
+			<div class="del2">
+				<label> Mailadresse: </label> 
+				<div id="space">
+				
+					<input type="text" name="Mailadresse" placeholder="Mailadresse" size="15"required /> 
+				</div> 
+				
+				<label> Kortfattet beskrivelse av firma/prosjekttilbyder: </label>  
+				<div id="beskrivelse">  
+					
+					
+					<textarea type="text" rows="10" cols="60" name="beskrivelse" placeholder="Beskrivelse"></textarea>
+				</div>  
+				 
+					
+			</div>
 			
-		</div>
+		<div>
 			<a href="pdf.html"><div id="button">Neste side</div></a>
 		</div>
 		
-	
+	</form>
 	</section>
 	
 
