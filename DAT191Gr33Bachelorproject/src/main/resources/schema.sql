@@ -62,10 +62,11 @@ CREATE TABLE projectdescription
   language varchar NOT NULL,
   programminglanguage varchar NOT NULL,
   projectType varchar NOT NULL,
+  theme varchar NOT NULL,
   webAddress varchar NOT NULL,
   contactPerson varchar (100) NOT NULL,
-  status varchar (20) NOT NULL,
-  semester varchar (100) NOT NULL,
+  status varchar (20),
+  semester varchar (100),
   dateOfApproval varchar (30),
   PRIMARY KEY (projectId)
   

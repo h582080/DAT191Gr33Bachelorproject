@@ -55,6 +55,21 @@ public class Projectdescription {
 		this.semester = semester;
 		this.dateOfApproval = dateOfApproval;
 	}
+	
+	public Projectdescription(String projectTitel, String companyInfo, String projectDescription,
+			String tools, String language, String programminglanguage, String projectType, 
+			String theme, String webAddress, String contactPerson) {
+		this.projectTitel = projectTitel;
+		this.companyInfo = companyInfo;
+		this.projectDescription = projectDescription;
+		this.tools = tools;
+		this.language = language;
+		this.programminglanguage = programminglanguage;
+		this.projectType = projectType;
+		this.theme = theme;
+		this.webAddress = webAddress;
+		this.contactPerson = contactPerson;		
+	}
 	public String getProgramminglanguage() {
 		return programminglanguage;
 	}

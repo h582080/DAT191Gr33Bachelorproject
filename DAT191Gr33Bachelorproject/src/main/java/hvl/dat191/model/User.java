@@ -23,6 +23,7 @@ public class User {
 	private int phoneNr;
 	private String email;
 	
+	
 	public User() {
 		
 	}

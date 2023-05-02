@@ -1,5 +1,9 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %> 
+
 <!DOCTYPE html>
-<html xmlns:th="https://www.thymeleaf.org">
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html charset=UTF-8">
 <title>Your project description</title>
@@ -16,8 +20,5 @@
   <p th:text="'theme: ' + ${projectdescription.theme}" />
   <p th:text="'webAddress: ' + ${projectdescription.webAddress}" />
   <p th:text="'contactPerson: ' + ${projectdescription.contactPerson}" />
-  <p th:text="'status: ' + ${projectdescription.status}" />
-  <p th:text="'semester: ' + ${projectdescription.semester}" />
-  <p th:text="'dateOfApproval: ' + ${projectdescription.dateOfApproval}" />
-  
 </body>
+</html>
