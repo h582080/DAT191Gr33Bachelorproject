@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="opprettoppdragsgiver.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
-	<style><%@include file="/WEB-INF/views/opprettoppdragsgiver.css"%></style>
+	<style><%@include file="/WEB-INF/css/opprettoppdragsgiver.css"%></style>
 </head>
 <body>
 	<section class="header">
@@ -29,8 +29,8 @@
 			 <nav>
 			<div class="naviger-reg">
 				<ul>
-					<li><a href="opprettprosjekt.html">STEG 1: PROSJEKTET</a></li>
-					<li id="prosjekt"><a href="opprettoppdragsgiver.html">STEG 2: OPPDRAGSGIVER</a></li>
+					<li id="prosjekt"><a href="opprettoppdragsgiver.html">STEG 1: OPPDRAGSGIVER</a></li>
+					<li><a href="opprettprosjekt.html">STEG 2: PROSJEKTET</a></li>
 					<li><a href="pdf.html">STEG 3: FORHÅNDSVISNING</a></li>
 				</ul>
 			</div>

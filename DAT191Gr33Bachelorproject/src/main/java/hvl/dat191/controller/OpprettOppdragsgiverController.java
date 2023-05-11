@@ -30,9 +30,9 @@ public class OpprettOppdragsgiverController {
 	}
 	
 	@PostMapping("/opprettoppdragsgiver")
-	public String opprettOppdragsgiver(@ModelAttribute("name") Client client) {
+	public String opprettOppdragsgiver(@ModelAttribute("client") Client client) {
 		service.insertClient(client);
-		return "Ferdig!";
+		return "pdf";
 	}
 
 }
