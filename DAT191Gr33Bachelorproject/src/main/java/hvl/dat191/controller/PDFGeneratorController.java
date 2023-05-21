@@ -22,7 +22,8 @@ public class PDFGeneratorController {
 	@GetMapping("/pdfgenerator")
 	public String pdfgenerator() {
 		try {
-			g.generatePDF(psdi.findAllProjectdescription());
+			g.generatePDFKatalog(psdi.findAllProjectdescription());
+			g.generatePDFProject(psdi.findAllProjectdescription().get(3));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
