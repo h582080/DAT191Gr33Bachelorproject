@@ -14,12 +14,12 @@
 <body>
 	<section class="header">
 		<nav>
-			<a href="front.html"><img src="https://www.hvl.no/globalassets/hvl-internett/bilde/logo/hvl_logo_neg.png"></a>
+			<a href="front"><img src="https://www.hvl.no/globalassets/hvl-internett/bilde/logo/hvl_logo_neg.png"></a>
 			<div class="nav-links">
 				<ul>
-					<li><a href="front.html">HJEM</a></li>
-					<li><a href="">MIN PROFIL</a></li>
-					<li><a href="mineprosjekt.html">MINE PROSJEKTFORSLAG</a></li>
+					<li><a href="front">HJEM</a></li>
+					<li><a href="minProfil">MIN PROFIL</a></li>
+					<li><a href="mineprosjekt">MINE PROSJEKTFORSLAG</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -29,9 +29,9 @@
 			 <nav>
 			<div class="naviger-reg">
 				<ul>
-					<li id="prosjekt"><a href="opprettoppdragsgiver.html">STEG 1: OPPDRAGSGIVER</a></li>
-					<li><a href="opprettprosjekt.html">STEG 2: PROSJEKTET</a></li>
-					<li><a href="pdf.html">STEG 3: FORHÅNDSVISNING</a></li>
+					<li id="prosjekt"><a href="opprettoppdragsgiver">STEG 1: OPPDRAGSGIVER</a></li>
+					<li><a href="opprettprosjekt">STEG 2: PROSJEKTET</a></li>
+					<li><a href="pdf">STEG 3: FORHÅNDSVISNING</a></li>
 				</ul>
 			</div>
 		</nav>

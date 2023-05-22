@@ -15,8 +15,8 @@
 
 .resten{
     
-    padding-left: 30px;
-    padding-right: 50px;
+    padding-left: 35px;
+    padding-right: 40px;
   background-color: white;
     
 }
@@ -149,7 +149,6 @@ h1{
 }
 
 
-
 input[type=text]{  
   width: 96%;  
   padding: 15px;  
@@ -171,7 +170,7 @@ input[type=text]:focus{
 }
 
 #checkboxes{
-    margin-top: 40px;
+    margin-top: 30px;
     
 }
 #checkboxes ul {
@@ -221,7 +220,7 @@ input[type=text]:focus{
     border: 1px solid #fff;
     position: relative;
     top: 5px;
-    left: 25px;
+    left: 6px;
     margin-bottom: 50px;
 }
 
@@ -232,7 +231,7 @@ a{
 
 #button:hover{
     border: 1px solid #fff;
-    background: green;
+    background: yellowgreen;
     transition: 0.5s;
     text-decoration: none;
     

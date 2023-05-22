@@ -11,15 +11,11 @@ import hvl.dat191.model.Projectcollection;
 
 @Controller
 @ControllerAdvice
-
 public class MineProsjektController {
 	
-	
-	
-	@GetMapping("mineProsjekt")
-	public String userProjects(Model model) {
-		model.addAttribute("userprojects");
-		return "mineProsjekt";
+	@GetMapping("mineprosjekt")
+	public String userProjects() {
+		return "mineprosjekt";
 	}
 	
 	

@@ -1,0 +1,140 @@
+/* CSS-stiler for chat-container */
+body {
+     font-family: 'Poppins', sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0px;
+}
+
+.header{
+    height: 18vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://gfx.nrk.no/Uqe9FAr8Rn5hWdxAt0zYTAGV-k92wVTfrTY2uC6GeXEg.jpg);
+    background-position: bottom;
+    background-size: cover;
+    
+   
+}
+
+.naviger-reg ul li{
+    list-style: none;
+    display: inline-block;
+    padding-top: 0px;
+    padding-bottom: 2px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background: #01AFBA;
+    height: 1px;
+    margin-left: 30px;
+   
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #01AFBA;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.chat-container {
+    max-width: 600px;
+    margin: 30px auto;
+    border: 1px solid #e9e9e9;
+    padding: 20px;
+    background-color: #7CE1E8;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative;
+    height: 420px;
+    
+}
+
+/* CSS-stiler for chatmeldinger */
+.message {
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    font-size: 12px;
+    
+}
+
+/* CSS-stiler for brukerinput */
+.user-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.user-input input[type="text"] {
+    width: 35%;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #f7f7f7;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    font-size: 12px;
+}
+
+input[type=text]:focus{  
+  background-color: #FFB74B;  
+  outline: none;  
+    
+
+} 
+
+.user-input button {
+    padding: 15px 20px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-input button:hover {
+    background-color: yellowgreen;
+}
+
+

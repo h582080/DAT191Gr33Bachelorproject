@@ -86,6 +86,7 @@ nav img{
     background: transparent;
     position: relative;
     cursor: pointer;
+    margin: 15px;
 }
 
 .opprett-btn:hover{

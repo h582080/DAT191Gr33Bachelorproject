@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+		
+.header{
+    min-height: 40vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://gfx.nrk.no/Uqe9FAr8Rn5hWdxAt0zYTAGV-k92wVTfrTY2uC6GeXEg.jpg);
+    background-position: bottom;
+    background-size: cover;
+   
+}
+
+.resten{
+   padding-left: 35px;
+    padding-right: 40px;
+  background-color: white;
+     width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    
+}
+
+.naviger-reg ul li{
+    list-style: none;
+    display: inline-block;
+    padding-top: 0px;
+    padding-bottom: 2px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background: #01AFBA;
+    height: 1px;
+    margin-left: 30px;
+   
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #01AFBA;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+#prosjekt{
+    background: orange;
+}
+
+.naviger-reg{
+    flex: 1;
+    text-align: center;
+}
+
+.naviger-reg ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    
+}
+
+.text-box label{
+    font-size: 14px;
+}
+
+.text-box h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+.text-box p{
+    margin: 0px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 580;
+}
+
+
+.card{
+    margin-top: 30px;
+   margin-left:70px;
+}
+
+input[type="text"]{
+   display:block;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    margin-left: -30px;
+    padding: 4px;
+    width: 220px;
+    height: 32px;
+    border: none;
+    border-bottom: 1px solid black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    transition: 0.2s ease;
+    background: none;
+    overflow: hidden;
+}
+
+input[type=text]:focus{  
+  background-color: #FFB74B;  
+  outline: none;  
+    border-radius: 6px;
+    font-size: 13px;
+
+} 
+
+.btn{
+     margin-left: -70px;
+    margin-bottom: 20px;
+}
+
+button{
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 120px;
+    border-radius: 5px;
+    margin: 5px;
+    transition: all 0.3s;
+    padding: 7px;
+    cursor: pointer;
+    
+}
+
+button:hover{
+    transform: scale(1.1);
+    border: 1px solid #006F76;
+    background: #01AFBA;
+}
+
+
+.text-box .info{
+   background: #01AFBA;
+    margin-left: 80px;
+    margin-bottom: 60px;
+    margin-top: 15px;
+    padding: 30px;
+    border-radius: 6px;
+    width: 500px;
+    height: 100px;
+    
+    
+}
+
+.info label{
+    font-size: 13px;
+    padding: 5px;
+    
+}
+
+img{
+    width: 18px;
+    margin: 7px;
+}
+
+.info input{
+    border-radius: 4px;
+    border: 1px solid;
+    padding: 3px;
+}
+
+
+
+
+.kontakt{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 500px;
+
+    padding-bottom: 40px;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+p{
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 4px;
+}
+
+td{
+    vertical-align: middle;
+   text-align: center;
+}
+
+table, td{
+    padding: 9px;
+    width: 25%;
+    font-size: 14px;
+}
+
+
+th{
+    color: black;
+    font-size: 16px;
+    border-bottom: 2px solid black;
+   padding: 9px;
+}
+
+table{
+    width: 1200px;
+    height: 250px;
+    background-color:white;
+    border-radius: 5px;
+    border: 3px solid black;
+    color: black;
+    align-content: center;
+   
+    
+}
+
+.tabell{
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.vurderes{
+    color: orange;
+    
+}
+
+.ikke{
+    color: red;
+}
+
+.godkjent{
+    color: limegreen;
+}
+
+.opprett{
+    width: 40px;
+   margin-top: 30px;
+}
+
+
+

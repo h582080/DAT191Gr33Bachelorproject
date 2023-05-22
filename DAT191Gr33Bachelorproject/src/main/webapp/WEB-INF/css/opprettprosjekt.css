@@ -8,15 +8,15 @@
     min-height: 40vh;
     width: 100%;
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://gfx.nrk.no/Uqe9FAr8Rn5hWdxAt0zYTAGV-k92wVTfrTY2uC6GeXEg.jpg);
-    background-position: bottom;
+    background-position:bottom;
     background-size: cover;
    
 }
 
 .resten{
     
-    padding-left: 30px;
-    padding-right: 50px;
+    padding-left: 35px;
+    padding-right: 40px;
   background-color: white;
     
 }
@@ -30,9 +30,9 @@
 
 .del2{
     position: relative;
-    left: 730px;
+    left: 720px;
     width: 600px;
-    top: -440px;
+    top: -1190px;
 }
 
 .naviger-reg ul li{
@@ -107,7 +107,6 @@ nav img{
     width: 100%;
 }
 
-
 .text-box{
     width: 90%;
     color: #fff;
@@ -143,10 +142,11 @@ nav img{
     font-size: 13px;
     background: black;
    position: absolute;
-    bottom: -100%;
+    
     left: 85%;
     cursor: pointer;
     font-weight: 580;
+    border-radius: 6px;
     
 }
 
@@ -168,64 +168,51 @@ h1{
 input[type=text]{  
   width: 96%;  
   padding: 15px;  
-  margin: 5px 0 12px 0;  
-  display: inline-block;  
   border: none;  
-  background: #f1f1f1;  
+  background: #f1f1f1; 
+    border-radius: 6px;
+    font-size: 13px;
 }  
-
-
+ 
 
 input[type=text]:focus{  
   background-color: #FFB74B;  
   outline: none;  
     border-radius: 6px;
-    width: 96%;  
-  padding: 15px;  
-  display: inline-block;
+    font-size: 13px;
 
 } 
 
-textarea{
-     width: 96%;  
-  padding: 15px;  
-  margin: 5px 0 12px 0;  
-  display: inline-block;  
-  border: none;  
-  background: #f1f1f1; 
-}
-
-textarea[type=text]:focus{  
-  background-color: #FFB74B;  
-  outline: none;  
-    border-radius: 6px;
-
-} 
-
-#checkboxes input{
-    margin: 0px 0px 0px 3px;
-}
 
 #checkboxes{
-    margin-top: 40px;
+    margin-top: 30px;
     
 }
 #checkboxes ul {
-  margin: 15px;
+    
+  margin-left: 15px;
+    padding: 10px;
   list-style: none;
-    font-size: 14px;
+    font-size: 13px;
   
 }
 
+#checkboxes ul li{
+    margin: 10px;
+    padding: 5px;
+    
+}
+
 #checkboxes label{
-    font-size: 16px;
+    font-size: 15px;
     margin: 5px;
    
 }
 
-.resten #checkboxes h1{
+
+#checkboxes h1{
     color: black;
-    font-size: 27px;
+    font-size: 25px;
     margin-left: 60px;
    
     
@@ -233,30 +220,13 @@ textarea[type=text]:focus{
 
 #checkboxes #space{
    
-    background: #f1f1f1;
-    padding-top: 5px;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-bottom: 8px;
-    
+   background: #f1f1f1;
+   
     margin-top: 5px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     border-radius: 6px;
 }
 
-#checkboxes #beskrivelse{
-   
-    background: #f1f1f1;
-    padding-top: 5px;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-bottom: 8px;
-    
-    margin-top: 5px;
-    margin-bottom: 25px;
-    border-radius: 6px;
-    
-}
 
 #button{
    
@@ -264,7 +234,7 @@ textarea[type=text]:focus{
     border-radius: 8px;
     text-align: center;
     text-decoration: none;
-   padding: 25px;
+   padding: 10px;
     font-size: 14px;
     cursor: pointer;
     font-weight: 580;
@@ -272,10 +242,10 @@ textarea[type=text]:focus{
     color: #fff;
     border: 1px solid #fff;
     position: relative;
-    top: -395px;
-    left: 25px;
+    width: 150px;
     
 }
+
 a{
     color: white;
     text-decoration: none;

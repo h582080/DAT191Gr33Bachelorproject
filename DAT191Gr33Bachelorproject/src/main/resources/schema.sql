@@ -56,20 +56,19 @@ CREATE TABLE projectdescription
 (
   projectId SERIAL,
   projectTitel varchar(100) NOT NULL,
-  companyInfo varchar NOT NULL,
-  projectDescription varchar NOT NULL,
-  tools varchar NOT NULL,
-  language varchar NOT NULL,
-  programminglanguage varchar NOT NULL,
-  projectType varchar NOT NULL,
-  theme varchar NOT NULL,
-  webAddress varchar NOT NULL,
+  companyInfo(300) varchar NOT NULL,
+  projectDescription(2000) varchar NOT NULL,
+  tools(300) varchar NOT NULL,
+  language(300) varchar NOT NULL,
+  programminglanguage(300) varchar NOT NULL,
+  projectType(200) varchar NOT NULL,
+  theme varchar(300) NOT NULL,
+  webAddress varchar(100) NOT NULL,
   contactPerson varchar (100) NOT NULL,
   status varchar (20),
   semester varchar (100),
   dateOfApproval varchar (30),
-  PRIMARY KEY (projectId)
-  
+  PRIMARY KEY (projectId)  
 );
 
 CREATE TABLE projectcollection

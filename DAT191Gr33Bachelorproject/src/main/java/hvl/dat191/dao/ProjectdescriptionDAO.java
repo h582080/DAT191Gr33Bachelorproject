@@ -38,11 +38,10 @@ public class ProjectdescriptionDAO implements ProjectdescriptionDAOInterface {
 
 	@Override
 	public void insertProjectdescription(Projectdescription projectDsc) {
-		final String sql = "insert into projectdescription(projectId, projectTitel, companyInfo, projectDescription, tools, language, programminglanguage, projectType, theme, webAddress, contactPerson, status, semester, dateOfApproval) values(:projectId,:projectTitel,:companyInfo,:projectDescription,:tools,:language,:programminglanguage,:projectType,:theme,:webAddress,:contactPerson,:status,:semester,:dateOfApproval)";
+		final String sql = "insert into projectdescription(projectTitel, companyInfo, projectDescription, tools, language, programminglanguage, projectType, theme, webAddress, contactPerson, status, semester, dateOfApproval) values(:projectTitel,:companyInfo,:projectDescription,:tools,:language,:programminglanguage,:projectType,:theme,:webAddress,:contactPerson,:status,:semester,:dateOfApproval)";
 		
 		KeyHolder holder = new GeneratedKeyHolder();
 		SqlParameterSource param = new MapSqlParameterSource()
-				.addValue("projectId", projectDsc.getProjectId())
 				.addValue("projectTitel", projectDsc.getProjectTitel())
 				.addValue("companyInfo", projectDsc.getCompanyInfo())
 				.addValue("projectDescription", projectDsc.getProjectDescription())

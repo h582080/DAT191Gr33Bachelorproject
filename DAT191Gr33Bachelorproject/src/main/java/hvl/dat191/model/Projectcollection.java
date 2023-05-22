@@ -3,6 +3,10 @@ package hvl.dat191.model;
 
 import jakarta.persistence.Table;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToMany;
+
+import java.util.Set;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -18,6 +22,9 @@ public class Projectcollection {
 	private int template;
 	private String collectionTitle;
 	private String semester;
+	
+//	@ManyToMany
+//	Set<Subjectmanager> collectionHandler;
 	
 	public Projectcollection() {
 		

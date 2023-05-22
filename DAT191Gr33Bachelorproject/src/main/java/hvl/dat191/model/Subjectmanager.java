@@ -3,6 +3,10 @@ package hvl.dat191.model;
 
 import jakarta.persistence.Table;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToMany;
+
+import java.util.Set;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -17,6 +21,9 @@ public class Subjectmanager {
 	
 	private String name;
 	private String email;
+	
+//	@ManyToMany
+//	Set<Projectcollection> colletionHandling;
 	
 	public Subjectmanager() {
 		
